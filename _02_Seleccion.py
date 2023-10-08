@@ -5,16 +5,16 @@ def seleccion(lista):
 
     
     for i in range(n):
-        # En cada iteración, encuentra el índice del elemento minimo en el subarray no ordenado.
+        # En cada iteracion encuentra el Ã­ndice del elemento minimo en el subarray no ordenado.
         a = i
         for j in range(i + 1, n):
             # Compara el elemento actual con el elemento minimo encontrado hasta ahora.
             if lista[j] < lista[a]:
-                # Si encuentra un elemento menor, actualiza el 'indice_minimo'.
+                # Si encuentra un elemento menor actualiza la a
                 a = j
 
-        # Intercambia el elemento actual con el elemento mínimo encontrado.
-        # Esto coloca el elemento minimo en la posición 'i'.
+        # Intercambia el elemento actual con el elemento minimo encontrado.
+        # Esto coloca el elemento minimo en la posicion 'i'.
         lista[i], lista[a] = lista[a], lista[i]
 
 
